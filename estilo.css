@@ -16,6 +16,11 @@ body{
     max-height:800px;
 }
 
+.superContenedor p{
+    text-align: left;
+    margin-left: 20%;
+}
+
 .contenedorImagen{
     /*hacer la imagen redonda*/
     box-sizing: border-box;
@@ -81,7 +86,7 @@ body{
 
 .contbotones{
     border: 0;
-    display: flex;
+    display:inline-block;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -104,7 +109,12 @@ body{
     font-weight: bolder;
     font-size:  1.5vw;
     background-color: inherit;
-    transition: .2s;
+    transition: .1s;
+    display: inline;
+    min-height: 40px;
+    min-width: 150px;
+    font-size: 20px;
+    
 }
 
 .boton:hover{
@@ -116,4 +126,14 @@ body{
     margin-top: 1%;
     text-align: center;
     font-style: italic;
+    font-size: 20px;
+}
+
+.piePagina a{
+    text-decoration: none;
+}
+
+.piePagina a:hover{
+    text-decoration:underline;
+    font-size: 18px;
 }
