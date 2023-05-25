@@ -18,18 +18,29 @@
         <h1>BIENVENIDO AL ENCRIPTADOR</h1>
         <p>SELECCIONE LA OPCIÓN QUE DESEA HACER:</p>
         
-        <form>
-            <input class="boton" type="button" value="Encriptar Mensaje" onclick="location.href='encriptar.html'"></input>
-            <input class="boton" type="button" value="Desencriptar Mensaje" onclick="location.href='desencriptar.html'"></input>
-        </form>
+        <div class="contenedorImagen">
+            <img class="imagenNinho" src="imagenes/ninho.jpg">   
+        </div>
+        
+        <div class="contenedorTextos">
+            <textarea class="textos" id="texto_inicial" placeholder="Todo texto aquí" autofocus></textarea>
+            <textarea class="textos" id="texto_final" placeholder="El resultado aparecerá aquí" disabled></textarea> 
+        </div>
+        
+        <fieldset class="contbotones">
+            <input class="boton" type="button" value="Encriptar" onclick="final()">
+            <input class="boton" type="button" value="Desencriptar" onclick="desencriptar()">
+            <input class="boton" type="button" value="Borrar" onclick="borrar()">
+            <input class="boton" type="button" value="Copiar" onclick="copiar()">
+        </fieldset>
         
     </section>
     </main>
 
-    <footer></footer>
+    <footer class="piePagina">Hecho por JReyes</footer>
     
 </body>
 
-<script> </script>
+<script src="script.js"> </script>
 
 </html>
